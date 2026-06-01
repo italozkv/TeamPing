@@ -1,28 +1,38 @@
+# TeamPing
 
-Installation information
-=======
+TeamPing is a Minecraft 1.21.1 NeoForge mod focused on co-op survival and team-based communication. It adds team pings, a radial ping wheel, acknowledgement responses, and customizable icons.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## What It Does
 
-Project overview for TeamPing:
-[docs/TEAMPING_OVERVIEW.md](docs/TEAMPING_OVERVIEW.md)
+- Team-based pings visible only to teammates
+- Hold `G` to open the radial ping menu
+- Hold `R` to send quick acknowledgement responses
+- Server-side validation for ping creation and acknowledgements
+- Configurable ping duration, cooldown, and range
+- Client-side HUD rendering with distance and icon display
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Useful Files
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- [Mod entry](src/main/java/dev/ithalo/teamping/TeamPing.java)
+- [Client entry](src/main/java/dev/ithalo/teamping/client/TeamPingClient.java)
+- [Ping input](src/main/java/dev/ithalo/teamping/client/PingWheelInputHandler.java)
+- [Ping renderer](src/main/java/dev/ithalo/teamping/client/PingWheelRenderer.java)
+- [HUD renderer](src/main/java/dev/ithalo/teamping/client/ClientPingRenderer.java)
+- [Server ping logic](src/main/java/dev/ithalo/teamping/server/ServerPingManager.java)
+- [Network payloads](src/main/java/dev/ithalo/teamping/network)
+- [Config](src/main/java/dev/ithalo/teamping/config/TeamPingConfig.java)
+- [Project overview](docs/TEAMPING_OVERVIEW.md)
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## Setup
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+1. Open the project in IntelliJ IDEA or another Java IDE with NeoForge support.
+2. Run `.\gradlew.bat build` to compile the mod.
+3. Copy the jar from `build/libs/` into your Minecraft `mods` folder.
+
+## Notes
+
+- The mod is designed to work on dedicated servers.
+- The server decides who receives each ping.
+- The client only handles input, rendering, and local selection state.
+- Icons are stored as PNG assets in the mod resources.
+
