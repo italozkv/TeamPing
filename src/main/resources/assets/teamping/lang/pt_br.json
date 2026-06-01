@@ -1,0 +1,29 @@
+{
+  "teamping.command.joined": "Voce entrou no time %s.",
+  "teamping.command.left": "Voce saiu do seu time de ping.",
+  "teamping.ping.label": "Ping de %s",
+
+  "key.categories.teamping": "TeamPing",
+  "key.team.ping": "Criar ping do time",
+  "key.teamping.ack_wheel": "Roda de confirmacao de ping",
+
+  "teamping.ack.understood": "Entendido",
+  "teamping.ack.on_my_way": "Estou a caminho",
+  "teamping.ack.negative": "Negativo",
+  "teamping.ack.checking": "Verificando",
+
+  "teamping.configuration.title": "Configuracoes do TeamPing",
+  "teamping.configuration.section.teamping-server.toml": "Configuracoes de servidor do TeamPing",
+  "teamping.configuration.section.teamping-server.toml.title": "Configuracoes de servidor do TeamPing",
+  "teamping.configuration.pingDurationSeconds": "Duracao do ping",
+  "teamping.configuration.pingCooldownSeconds": "Cooldown do ping",
+  "teamping.configuration.maxPingDistance": "Distancia maxima do ping",
+  "teamping.configuration.maxActivePingsPerPlayer": "Maximo de pings ativos por jogador",
+  "teamping.configuration.allowCrossDimensionPings": "Permitir pings entre dimensoes",
+  "teamping.configuration.enableAcknowledgements": "Ativar confirmacoes",
+  "teamping.configuration.ackInteractionDistance": "Distancia para confirmar",
+  "teamping.configuration.ackHudDetailsDistance": "Distancia para detalhes da confirmacao",
+  "teamping.configuration.ackResponseCooldownMs": "Cooldown da resposta",
+  "teamping.configuration.showAckNotifications": "Mostrar notificacoes de confirmacao",
+  "teamping.configuration.playAckSound": "Tocar som de confirmacao"
+}

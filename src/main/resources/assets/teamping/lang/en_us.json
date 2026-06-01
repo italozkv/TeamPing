@@ -1,0 +1,29 @@
+{
+  "teamping.command.joined": "You joined team %s.",
+  "teamping.command.left": "You left your ping team.",
+  "teamping.ping.label": "%s ping",
+
+  "key.categories.teamping": "TeamPing",
+  "key.team.ping": "Create team ping",
+  "key.teamping.ack_wheel": "Ping acknowledgement wheel",
+
+  "teamping.ack.understood": "Understood",
+  "teamping.ack.on_my_way": "On my way",
+  "teamping.ack.negative": "Negative",
+  "teamping.ack.checking": "Checking",
+
+  "teamping.configuration.title": "TeamPing Configs",
+  "teamping.configuration.section.teamping-server.toml": "TeamPing Server Configs",
+  "teamping.configuration.section.teamping-server.toml.title": "TeamPing Server Configs",
+  "teamping.configuration.pingDurationSeconds": "Ping Duration",
+  "teamping.configuration.pingCooldownSeconds": "Ping Cooldown",
+  "teamping.configuration.maxPingDistance": "Maximum Ping Distance",
+  "teamping.configuration.maxActivePingsPerPlayer": "Maximum Active Pings Per Player",
+  "teamping.configuration.allowCrossDimensionPings": "Allow Cross-Dimension Pings",
+  "teamping.configuration.enableAcknowledgements": "Enable Acknowledgements",
+  "teamping.configuration.ackInteractionDistance": "Acknowledgement Interaction Distance",
+  "teamping.configuration.ackHudDetailsDistance": "Acknowledgement Details Distance",
+  "teamping.configuration.ackResponseCooldownMs": "Acknowledgement Response Cooldown",
+  "teamping.configuration.showAckNotifications": "Show Acknowledgement Notifications",
+  "teamping.configuration.playAckSound": "Play Acknowledgement Sound"
+}
