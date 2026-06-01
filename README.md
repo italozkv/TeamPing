@@ -34,6 +34,8 @@ The server stays in charge of validation and visibility. Players get a clean, fl
 | On my way | `X` while looking at a ping |
 | Negative | `C` while looking at a ping |
 | Checking | `V` while looking at a ping |
+| Cancel own ping | Hold `G` on your own ping |
+| Cancel all own pings | Hold `Shift + G` |
 
 ## Team Commands
 
@@ -44,6 +46,7 @@ The server stays in charge of validation and visibility. Players get a clean, fl
 /pingteam amarelo
 /pingteam sair
 /pingteam reload
+/pingteam pingmax 1-10
 ```
 
 Only players on the same TeamPing team can see each other's pings and responses.
@@ -65,6 +68,7 @@ The client settings screen lets each player tune:
 - ping icon scale
 - marker brightness
 - ACK toast duration
+- maximum active pings per player
 
 The server can allow or lock those values through `config/PingTeam/server.properties`. Personal client settings are stored in `config/PingTeam/client.properties`.
 
