@@ -1,43 +1,26 @@
-# TeamPing
+# Changelog
 
-[![Build](https://github.com/italozkv/TeamPing/actions/workflows/build.yml/badge.svg)](https://github.com/italozkv/TeamPing/actions/workflows/build.yml)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A)](https://www.minecraft.net/)
-[![NeoForge](https://img.shields.io/badge/NeoForge-21.1.231-FF7A18)](https://neoforged.net/)
+## Unreleased
 
-TeamPing is a small co-op survival mod for Minecraft 1.21.1 that helps players talk without typing. It adds team pings, a radial menu, quick acknowledgement responses, and room for custom icons.
+- Added client-side quick message customization for ping acknowledgements.
+- Added a `U` menu for extra icon and quick message customization.
+- Updated acknowledgement flow so responses appear as chat messages.
+- Updated ping icons to inherit the ping creator's team color.
+- Improved extras menu layout and removed Minecraft menu blur from TeamPing screens.
+- Increased the default maximum ping distance to 216 blocks.
+- Increased the default ping duration to 10 seconds.
+- Improved support for dropped item, hostile mob, and passive mob ping targets.
+- Updated English and Portuguese translations.
+- Refreshed public project documentation.
 
-## ✨ What it feels like
+## 1.0.0
 
-- Mark danger, loot, mobs, or a place in one quick action
-- Keep pings visible only to your team
-- Hold `G` to open the radial wheel
-- Hold `R` to send a fast response
-- See distance and icon info right on the ping
-
-## 🚀 Install
-
-1. Build the mod with `.\gradlew.bat build`
-2. Grab the jar from `build/libs/`
-3. Drop it into your Minecraft `mods` folder
-
-## 🔧 For players
-
-- Use `/pingteam azul`, `/pingteam vermelho`, `/pingteam verde`, or `/pingteam amarelo`
-- Use `/pingteam sair` to leave your team
-- Open the config to tune ping duration, cooldown, and range
-
-## 🧩 For builders
-
-- [Project overview](docs/TEAMPING_OVERVIEW.md)
-- [Changelog](CHANGELOG.md)
-- [Mod entry](src/main/java/dev/ithalo/teamping/TeamPing.java)
-- [Client input](src/main/java/dev/ithalo/teamping/client/PingWheelInputHandler.java)
-- [Renderer](src/main/java/dev/ithalo/teamping/client/PingWheelRenderer.java)
-- [Server ping logic](src/main/java/dev/ithalo/teamping/server/ServerPingManager.java)
-
-## Notes
-
-- The server decides who sees each ping.
-- The client handles input and rendering only.
-- Icons live in the mod resources as PNG files.
-- The project is meant to feel light, readable, and easy to extend.
+- Initial public release of TeamPing.
+- Added team-based pings for Minecraft 1.21.1 NeoForge.
+- Added ping teams: blue, red, green, and yellow.
+- Added `/pingteam` commands for joining and leaving teams.
+- Added server-authoritative ping validation and distribution.
+- Added radial ping wheel.
+- Added quick acknowledgement responses.
+- Added configurable ping duration, cooldown, range, active ping limit, and dimension behavior.
+- Added PNG icon assets for ping types and extras.
